@@ -1,0 +1,110 @@
+[
+  {
+    "_id": "dbea8618-f943-434f-be29-109fbedf57a5",
+    "colId": "e9cc8091-5847-434c-b73d-8df39cd3af0e",
+    "containerId": "",
+    "name": "Search by keyword",
+    "url": "{{URL}}/characters/{indexName}?keyword=Arya",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-06-22T02:43:35.691Z",
+    "modified": "2023-06-22T03:10:06.954Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "indexName",
+        "value": "characters",
+        "isPath": true
+      },
+      {
+        "name": "keyword",
+        "value": "Arya",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "e7dded78-fe68-4322-84c6-23cc428a6019",
+    "colId": "e9cc8091-5847-434c-b73d-8df39cd3af0e",
+    "containerId": "",
+    "name": "Bulk insert",
+    "url": "{{URL}}/characters/multiple",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-06-22T02:45:34.767Z",
+    "modified": "2023-06-22T02:46:22.547Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"indexName\": \"characters\",\n  \"characters\": [\n    {\n        \"id\": 1,\n        \"name\": \"Rhaenyra Targaryen\",\n        \"quote\": \"First Queen.\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Daemon Targaryen\",\n        \"quote\": \"You cannot live your life in fear, or you will forsake the best parts of it.\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Corlys Velaryon\",\n        \"quote\": \"Our worth is not given. it must be made.\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Jaime Lannister\",\n        \"quote\": \"The things I do for love.\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Tyrion Lannister\",\n        \"quote\": \"I drink and I know things.\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Jon Snow\",\n        \"quote\": \"I don't know anything.\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Daenerys Targaryen\",\n        \"quote\": \"I am the blood of the dragon.\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Arya Stark\",\n        \"quote\": \"A girl has no name.\"\n    }\n]\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "df4344b0-9e48-4a51-a55d-ce856c8380a5",
+    "colId": "e9cc8091-5847-434c-b73d-8df39cd3af0e",
+    "containerId": "",
+    "name": "Insert",
+    "url": "{{URL}}/characters",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2023-06-22T02:48:21.303Z",
+    "modified": "2023-06-22T03:04:47.705Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"indexName\": \"characters\",\n  \"characters\": [\n    {\n        \"id\": 1,\n        \"name\": \"Rhaenyra Targaryen\",\n        \"quote\": \"First Queen.\"\n    }\n  ]\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "7c82e8e0-5925-4386-a06f-bd0d813b4494",
+    "colId": "e9cc8091-5847-434c-b73d-8df39cd3af0e",
+    "containerId": "",
+    "name": "Delete all",
+    "url": "{{URL}}/characters/{indexName}/bulk",
+    "method": "DELETE",
+    "sortNum": 40000,
+    "created": "2023-06-22T03:05:34.390Z",
+    "modified": "2023-06-22T03:07:46.492Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "indexName",
+        "value": "characters",
+        "isPath": true
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "bc1c4128-88dc-45c5-b5a0-21109124678a",
+    "colId": "e9cc8091-5847-434c-b73d-8df39cd3af0e",
+    "containerId": "",
+    "name": "Delete one",
+    "url": "{{URL}}/characters/{indexName}/{id}",
+    "method": "DELETE",
+    "sortNum": 50000,
+    "created": "2023-06-22T03:08:32.929Z",
+    "modified": "2023-06-22T03:08:59.091Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "indexName",
+        "value": "characters",
+        "isPath": true
+      },
+      {
+        "name": "id",
+        "value": "1",
+        "isPath": true
+      }
+    ],
+    "tests": []
+  }
+]

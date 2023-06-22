@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "608ea964-a3d0-4cbb-bd78-f4c4968c8d3a",
+    "name": "OpenSearch LOCAL",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2023-06-22T02:42:54.790Z",
+    "modified": "2023-06-22T02:42:54.790Z",
+    "data": [
+      {
+        "name": "URL",
+        "value": "http://localhost:5000"
+      }
+    ]
+  }
+]
